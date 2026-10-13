@@ -18,15 +18,15 @@ Everything is built and tested on mobile, using only free model access (Gemini, 
 
 ---
 
-### Selected Projects
+### Pinned Projects
 
 | Repository | Description |
 | :--- | :--- |
-| **[Repo-enhancer](https://github.com/craighckby-stack/Repo-enhancer)** | Autonomous repository evolution engine. Agents propose, debate, and apply controlled code mutations with risk scoring and human approval gates. |
-| **[EMG](https://github.com/craighckby-stack/EMG)** | Verification-gated refactoring & security engine featuring self-stopping loops, sanitisation, and explicit failure recording. |
-| **[AetherForge](https://github.com/craighckby-stack/Aether_Forge-)** | Generative substrate for modelling and evolving simulated environments. |
-| **[GitHub-Engine-Harvester](https://github.com/craighckby-stack/GitHub-Engine-Harvester)** | Collection, cleaning, and deployment tooling for autonomous agent runtimes. |
-| **[unitary-core](https://github.com/craighckby-stack/unitary-core)** | Multi-agent reasoning and orchestration layer. |
+| **[Aether_Forge-](https://github.com/craighckby-stack/Aether_Forge-)** | Ω |
+| **[EMG](https://github.com/craighckby-stack/EMG)** | Code enhancer with self stopping point and security sanitiser. |
+| **[GitHub-Engine-Harvester](https://github.com/craighckby-stack/GitHub-Engine-Harvester)** | GitHub Engine Harvester |
+| **[Wonder-Craig-Game-Demo](https://github.com/craighckby-stack/Wonder-Craig-Game-Demo)** | Wonder Boy meets Mario meets Charlie the Unicorn. A single-file browser platformer demo, no dependencies. |
+| **[DARLEK-CAAN-vs-JESUS-CHESS](https://github.com/craighckby-stack/DARLEK-CAAN-vs-JESUS-CHESS)** | CHESS |
 
 These systems prioritise **controlled autonomy** — agents can act, but only inside clear safety boundaries, with records of decisions and failure modes.
 
