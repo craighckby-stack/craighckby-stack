@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-aider-global-23",
+  "name": "Aider AI Pairing Lead",
+  "protocol": "REST",
+  "autonomy_level": "L3-Conditional",
+  "security_sandbox": "Local developer terminal with git git-commit rollback history",
+  "capabilities": [
+    "Repo-map tree-sitter indexing",
+    "Git auto-commit messages",
+    "Architect / Editor model mode"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 15,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
