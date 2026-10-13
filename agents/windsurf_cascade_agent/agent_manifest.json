@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-windsurf-cascade-24",
+  "name": "Windsurf Cascade Agent",
+  "protocol": "MCP",
+  "autonomy_level": "L3-Conditional",
+  "security_sandbox": "Electron native secure boundary with permission gates",
+  "capabilities": [
+    "Supercomplete typing",
+    "Cascade multi-step agent flow",
+    "Terminal command execution"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 20,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
