@@ -51,10 +51,3 @@ Multi-agent reasoning and orchestration layer designed for structured decision-m
 
 ### Security & Governance Approach
 Systems are built with explicit approval gates, recorded decision trails, and reversible actions. Emphasis is placed on data sanitisation, risk scoring of automated changes, and human sign-off before any modification is applied. Designed to support review and accountability rather than fully unsupervised automation.
-
-### Education & Certifications
-[Add degree(s), institution(s), and years]
-[Add any relevant certifications]
-
-### Additional Information
-Public repositories include READMEs, architecture notes, and setup instructions. Prototype demos and walkthroughs available on request. Open to security vetting and adapting systems to specific compliance or logging requirements.
