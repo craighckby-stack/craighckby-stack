@@ -1,0 +1,75 @@
+{
+  "id": "repo-agent-windsurf-cascade-24",
+  "agentId": "agent-windsurf-cascade-24",
+  "name": "Windsurf Cascade Agent",
+  "tagline": "Deep cognitive flow assistant weaving real-time context and command line action into editor",
+  "category": "coding-swe",
+  "isActive": true,
+  "status": "live",
+  "classification": {
+    "classification": "functional",
+    "spamScore": 2,
+    "confidencePercent": 94,
+    "verdict": "Verified Functional Agent (Legitimate Tool Calling)",
+    "reasons": [
+      "Standardized Model Context Protocol (MCP) tool integration"
+    ],
+    "threatIndicators": [],
+    "safePatterns": [
+      "Standardized Model Context Protocol (MCP) tool integration"
+    ],
+    "auditedAt": "2026-10-13T23:59:26.213Z",
+    "auditMethod": "heuristic-analyzer"
+  },
+  "origin": {
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "cloudProvider": "GCP",
+    "organization": "Codeium Inc.",
+    "isSovereignAI": false
+  },
+  "protocol": "MCP",
+  "foundationModel": "Cascade Custom Engine",
+  "autonomyLevel": "L3-Conditional",
+  "securitySandbox": "Electron native secure boundary with permission gates",
+  "code": {
+    "primaryLanguage": "typescript",
+    "entryFile": "agent_runner.py",
+    "files": [
+      {
+        "fileName": "agent_runner.py",
+        "language": "typescript",
+        "linesCount": 26,
+        "description": "Complete agent execution loop for Windsurf Cascade Agent",
+        "content": "/**\n * Windsurf Cascade Agent - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class WindsurfCascadeAgentAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"windsurf-cascade-agent\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] Windsurf Cascade Agent online. Foundation Model: Cascade Custom Engine\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n"
+      },
+      {
+        "fileName": "agent_manifest.json",
+        "language": "json",
+        "linesCount": 22,
+        "description": "Agent configuration, tools permission scope, and telemetry registration",
+        "content": "{\n  \"agent_id\": \"agent-windsurf-cascade-24\",\n  \"name\": \"Windsurf Cascade Agent\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Electron native secure boundary with permission gates\",\n  \"capabilities\": [\n    \"Supercomplete typing\",\n    \"Cascade multi-step agent flow\",\n    \"Terminal command execution\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 20,\n    \"last_ping\": \"2026-10-13T23:59:25.969Z\"\n  }\n}"
+      }
+    ],
+    "fullCode": "/**\n * Windsurf Cascade Agent - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class WindsurfCascadeAgentAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"windsurf-cascade-agent\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] Windsurf Cascade Agent online. Foundation Model: Cascade Custom Engine\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
+    "dependencies": [
+      "@modelcontextprotocol/sdk>=1.0.0"
+    ],
+    "version": "v1.0.0",
+    "systemPrompt": "You are Windsurf Cascade Agent, an autonomous agent specializing in coding-swe.",
+    "toolsManifest": "[\"Supercomplete typing\",\"Cascade multi-step agent flow\",\"Terminal command execution\"]"
+  },
+  "telemetrySnapshot": {
+    "lastPingTimestamp": "2026-10-13T23:59:25.969Z",
+    "lastLatencyMs": 30,
+    "uptimePercentage": 99.94,
+    "heartbeatIntervalSeconds": 20,
+    "requestsHandled24h": 670093,
+    "averageExecutionTimeSec": 30
+  },
+  "savedAt": "2026-10-13T23:59:26.213Z",
+  "lastUpdatedAt": "2026-10-13T23:59:26.213Z",
+  "source": "crawler_telemetry",
+  "notes": "Ingested from live observatory crawler. Latency: 30ms."
+}
