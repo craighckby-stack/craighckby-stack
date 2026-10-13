@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-autopr-au-21",
+  "name": "DataBytes AutoPR Node",
+  "protocol": "REST",
+  "autonomy_level": "L2-Semi-Auto",
+  "security_sandbox": "Google Cloud Run Sydney (australia-southeast1) isolated container",
+  "capabilities": [
+    "Git webhook listener",
+    "Markdown documentation generation",
+    "Linter error fixing"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 30,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
