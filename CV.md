@@ -18,7 +18,7 @@ Independent AI researcher and full-stack developer focused on safety-oriented au
 *Owner / Lead Architect*  
 https://github.com/craighckby-stack/EMG
 
-Designed and built an autonomous code enhancement system that only applies repository changes after passing verification checks, sanitisation, and explicit human approval. Every agent decision is recorded, risk-scored, and reversible. Includes self-stopping loops and failure recording for auditability.
+Designed and built an autonomous code enhancement system that can be configured to require human approval before applying repository changes. It performs verification checks (compile/AST diagnostics), sanitisation steps, and records agent decisions and failure modes for auditability. The system supports risk scoring and mechanisms to revert applied changes; it also includes self-stopping loops and post-mortem recording for continuous improvement. These behaviours are documented in the project README and are configurable depending on deployment settings.
 
 **Repo-enhancer — Autonomous Repository Evolution Engine**  
 *Lead Developer*  
@@ -50,4 +50,11 @@ Multi-agent reasoning and orchestration layer designed for structured decision-m
 - **Approach:** Mobile-first development, free-tier APIs only, reproducible prototypes
 
 ### Security & Governance Approach
-Systems are built with explicit approval gates, recorded decision trails, and reversible actions. Emphasis is placed on data sanitisation, risk scoring of automated changes, and human sign-off before any modification is applied. Designed to support review and accountability rather than fully unsupervised automation.
+Systems are built with explicit approval gates, recorded decision trails, and reversible actions where appropriate. Emphasis is placed on data sanitisation, risk scoring of automated changes, and human sign-off before any modification is applied in production-like deployments. Designed to support review and accountability rather than fully unsupervised automation.
+
+### Education & Certifications
+[Add degree(s), institution(s), and years]
+[Add any relevant certifications]
+
+### Additional Information
+Public repositories include READMEs, architecture notes, and setup instructions. Prototype demos and walkthroughs available on request. Open to security vetting and adapting systems to specific compliance or logging requirements.
