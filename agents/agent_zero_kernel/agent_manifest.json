@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-agentzero-de-22",
+  "name": "Agent Zero Kernel",
+  "protocol": "MCP",
+  "autonomy_level": "L4-High-Autonomy",
+  "security_sandbox": "Docker rootless container with local socket mount",
+  "capabilities": [
+    "System terminal manipulation",
+    "Dynamic Python code generator",
+    "Local memory persistence"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 30,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
