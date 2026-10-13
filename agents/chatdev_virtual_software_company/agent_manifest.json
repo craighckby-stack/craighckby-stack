@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-chatdev-swarm-19",
+  "name": "ChatDev Virtual Software Company",
+  "protocol": "A2A",
+  "autonomy_level": "L3-Conditional",
+  "security_sandbox": "Local virtualized python execution environment",
+  "capabilities": [
+    "Role-playing dialogue",
+    "Waterfall software development simulation",
+    "Automated code compilation"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 40,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
