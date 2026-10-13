@@ -1,0 +1,17 @@
+{
+  "agent_id": "agent-langgraph-cloud-20",
+  "name": "LangGraph State Orchestrator",
+  "protocol": "A2A",
+  "autonomy_level": "L4-High-Autonomy",
+  "security_sandbox": "Serverless isolated containers with checkpoint persistence in PostgreSQL",
+  "capabilities": [
+    "Stateful graph traversal",
+    "Time-travel state replay",
+    "Human approval interrupt",
+    "Sub-graph routing"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 20,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
