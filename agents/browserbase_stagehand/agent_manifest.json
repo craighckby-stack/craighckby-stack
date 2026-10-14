@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-browserbase-10",
+  "name": "Browserbase Stagehand",
+  "protocol": "Tool Calling",
+  "autonomy_level": "L3-Conditional",
+  "security_sandbox": "Virtual cloud browser instances with residential proxy rotation",
+  "capabilities": [
+    "act() coordinate automation",
+    "extract() typed schema parsing",
+    "observe() DOM inspection"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 30,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
