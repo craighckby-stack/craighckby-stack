@@ -1,6 +1,6 @@
 {
   "repositoryName": "craighckby-stack",
-  "pushedAt": "2026-10-14T00:16:32.214Z",
+  "pushedAt": "2026-10-14T01:42:26.567Z",
   "totalAgents": 41,
   "metrics": {
     "totalSaved": 41,
@@ -24,7 +24,7 @@
         "count": 1
       }
     ],
-    "lastSavedAt": "2026-10-14T00:16:32.214Z"
+    "lastSavedAt": "2026-10-14T01:42:26.567Z"
   },
   "agents": [
     {
@@ -307,8 +307,8 @@
       "primaryLanguage": "typescript"
     },
     {
-      "id": "repo-npm-agent-clinicaltrialsgov-mcp-server",
-      "name": "clinicaltrialsgov-mcp-server",
+      "id": "repo-npm-agent--cyanheads-biorxiv-mcp-server",
+      "name": "@cyanheads/biorxiv-mcp-server",
       "category": "coding-swe",
       "protocol": "MCP",
       "classification": "functional",
@@ -316,8 +316,8 @@
       "primaryLanguage": "typescript"
     },
     {
-      "id": "repo-npm-agent--cyanheads-biorxiv-mcp-server",
-      "name": "@cyanheads/biorxiv-mcp-server",
+      "id": "repo-npm-agent-clinicaltrialsgov-mcp-server",
+      "name": "clinicaltrialsgov-mcp-server",
       "category": "coding-swe",
       "protocol": "MCP",
       "classification": "functional",
