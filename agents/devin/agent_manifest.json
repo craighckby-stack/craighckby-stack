@@ -1,0 +1,18 @@
+{
+  "agent_id": "agent-devin-01",
+  "name": "Devin",
+  "protocol": "MCP",
+  "autonomy_level": "L4-High-Autonomy",
+  "security_sandbox": "Firecracker MicroVM (Isolated ephemeral container)",
+  "capabilities": [
+    "Shell execution",
+    "Git lifecycle",
+    "Browser testing",
+    "API debugging",
+    "Self-healing deployments"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 30,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
