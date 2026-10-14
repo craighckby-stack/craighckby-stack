@@ -18,7 +18,7 @@
     "safePatterns": [
       "Isolated sandbox container runtime boundary"
     ],
-    "auditedAt": "2026-10-14T00:13:40.969Z",
+    "auditedAt": "2026-10-14T01:39:34.718Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-browserbase-10\",\n  \"name\": \"Browserbase Stagehand\",\n  \"protocol\": \"Tool Calling\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Virtual cloud browser instances with residential proxy rotation\",\n  \"capabilities\": [\n    \"act() coordinate automation\",\n    \"extract() typed schema parsing\",\n    \"observe() DOM inspection\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 30,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-browserbase-10\",\n  \"name\": \"Browserbase Stagehand\",\n  \"protocol\": \"Tool Calling\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Virtual cloud browser instances with residential proxy rotation\",\n  \"capabilities\": [\n    \"act() coordinate automation\",\n    \"extract() typed schema parsing\",\n    \"observe() DOM inspection\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 30,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "\"\"\"\nBrowserbase Stagehand - Autonomous Agent Runtime\nOrigin: United States (Browserbase Inc.)\nAutonomy: L3-Conditional | Sandbox: Virtual cloud browser instances with residential proxy rotation\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass BrowserbaseStagehandAgent:\n    def __init__(self):\n        self.name = \"Browserbase Stagehand\"\n        self.is_active = True\n        self.capabilities = [\"act() coordinate automation\",\"extract() typed schema parsing\",\"observe() DOM inspection\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = BrowserbaseStagehandAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n",
@@ -62,15 +62,15 @@
     "toolsManifest": "[\"act() coordinate automation\",\"extract() typed schema parsing\",\"observe() DOM inspection\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 38,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 35,
     "uptimePercentage": 99.95,
     "heartbeatIntervalSeconds": 30,
-    "requestsHandled24h": 340074,
+    "requestsHandled24h": 340064,
     "averageExecutionTimeSec": 50
   },
-  "savedAt": "2026-10-14T00:13:40.969Z",
-  "lastUpdatedAt": "2026-10-14T00:13:40.969Z",
+  "savedAt": "2026-10-14T01:39:34.718Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.718Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 38ms."
+  "notes": "Ingested from live observatory crawler. Latency: 35ms."
 }
