@@ -18,7 +18,7 @@
     "safePatterns": [
       "Standardized Model Context Protocol (MCP) tool integration"
     ],
-    "auditedAt": "2026-10-14T00:13:41.099Z",
+    "auditedAt": "2026-10-14T01:39:34.836Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-agentzero-de-22\",\n  \"name\": \"Agent Zero Kernel\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Docker rootless container with local socket mount\",\n  \"capabilities\": [\n    \"System terminal manipulation\",\n    \"Dynamic Python code generator\",\n    \"Local memory persistence\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 30,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-agentzero-de-22\",\n  \"name\": \"Agent Zero Kernel\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Docker rootless container with local socket mount\",\n  \"capabilities\": [\n    \"System terminal manipulation\",\n    \"Dynamic Python code generator\",\n    \"Local memory persistence\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 30,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "/**\n * Agent Zero Kernel - Autonomous Agent\n * Category: browser-rpa | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class AgentZeroKernelAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"agent-zero-kernel\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] Agent Zero Kernel online. Foundation Model: DeepSeek-V3 / Llama 3.3\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
@@ -61,15 +61,15 @@
     "toolsManifest": "[\"System terminal manipulation\",\"Dynamic Python code generator\",\"Local memory persistence\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 46,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 45,
     "uptimePercentage": 99.81,
     "heartbeatIntervalSeconds": 30,
-    "requestsHandled24h": 62101,
+    "requestsHandled24h": 62018,
     "averageExecutionTimeSec": 140
   },
-  "savedAt": "2026-10-14T00:13:41.099Z",
-  "lastUpdatedAt": "2026-10-14T00:13:41.099Z",
+  "savedAt": "2026-10-14T01:39:34.836Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.836Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 46ms."
+  "notes": "Ingested from live observatory crawler. Latency: 45ms."
 }
