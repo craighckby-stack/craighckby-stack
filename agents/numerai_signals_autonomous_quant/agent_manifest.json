@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-numerai-quant-16",
+  "name": "Numerai Signals Autonomous Quant",
+  "protocol": "REST",
+  "autonomy_level": "L4-High-Autonomy",
+  "security_sandbox": "Isolated AWS ECS Fargate container with restricted outbound firewall",
+  "capabilities": [
+    "Tick-by-tick orderbook analysis",
+    "Monte Carlo portfolio simulation",
+    "Cryptographic signal submission"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 60,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
