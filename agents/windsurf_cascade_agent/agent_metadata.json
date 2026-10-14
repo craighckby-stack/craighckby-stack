@@ -18,7 +18,7 @@
     "safePatterns": [
       "Standardized Model Context Protocol (MCP) tool integration"
     ],
-    "auditedAt": "2026-10-14T00:13:41.119Z",
+    "auditedAt": "2026-10-14T01:39:34.858Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-windsurf-cascade-24\",\n  \"name\": \"Windsurf Cascade Agent\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Electron native secure boundary with permission gates\",\n  \"capabilities\": [\n    \"Supercomplete typing\",\n    \"Cascade multi-step agent flow\",\n    \"Terminal command execution\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 20,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-windsurf-cascade-24\",\n  \"name\": \"Windsurf Cascade Agent\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Electron native secure boundary with permission gates\",\n  \"capabilities\": [\n    \"Supercomplete typing\",\n    \"Cascade multi-step agent flow\",\n    \"Terminal command execution\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 20,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "/**\n * Windsurf Cascade Agent - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class WindsurfCascadeAgentAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"windsurf-cascade-agent\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] Windsurf Cascade Agent online. Foundation Model: Cascade Custom Engine\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
@@ -61,15 +61,15 @@
     "toolsManifest": "[\"Supercomplete typing\",\"Cascade multi-step agent flow\",\"Terminal command execution\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 32,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 29,
     "uptimePercentage": 99.94,
     "heartbeatIntervalSeconds": 20,
-    "requestsHandled24h": 670068,
+    "requestsHandled24h": 670014,
     "averageExecutionTimeSec": 30
   },
-  "savedAt": "2026-10-14T00:13:41.119Z",
-  "lastUpdatedAt": "2026-10-14T00:13:41.119Z",
+  "savedAt": "2026-10-14T01:39:34.858Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.858Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 32ms."
+  "notes": "Ingested from live observatory crawler. Latency: 29ms."
 }
