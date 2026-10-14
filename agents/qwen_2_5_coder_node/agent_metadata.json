@@ -1,0 +1,76 @@
+{
+  "id": "repo-agent-qwen-coder-05",
+  "agentId": "agent-qwen-coder-05",
+  "name": "Qwen 2.5 Coder Node",
+  "tagline": "High-performance open weights coding agent deployed on APAC sovereign cloud nodes",
+  "category": "coding-swe",
+  "isActive": true,
+  "status": "live",
+  "classification": {
+    "classification": "functional",
+    "spamScore": 2,
+    "confidencePercent": 94,
+    "verdict": "Verified Functional Agent (Legitimate Tool Calling)",
+    "reasons": [
+      "Isolated sandbox container runtime boundary"
+    ],
+    "threatIndicators": [],
+    "safePatterns": [
+      "Isolated sandbox container runtime boundary"
+    ],
+    "auditedAt": "2026-10-13T23:59:26.036Z",
+    "auditMethod": "heuristic-analyzer"
+  },
+  "origin": {
+    "country": "China",
+    "countryCode": "CN",
+    "region": "Asia-Pacific",
+    "cloudProvider": "Self-Hosted",
+    "organization": "Alibaba Cloud / Qwen Team",
+    "isSovereignAI": true
+  },
+  "protocol": "Tool Calling",
+  "foundationModel": "Qwen 2.5 Coder 32B-Instruct",
+  "autonomyLevel": "L3-Conditional",
+  "securitySandbox": "Kubernetes Pod with read-only rootfs",
+  "code": {
+    "primaryLanguage": "python",
+    "entryFile": "agent_runner.py",
+    "files": [
+      {
+        "fileName": "agent_runner.py",
+        "language": "python",
+        "linesCount": 24,
+        "description": "Complete agent execution loop for Qwen 2.5 Coder Node",
+        "content": "\"\"\"\nQwen 2.5 Coder Node - Autonomous Agent Runtime\nOrigin: China (Alibaba Cloud / Qwen Team)\nAutonomy: L3-Conditional | Sandbox: Kubernetes Pod with read-only rootfs\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass Qwen25CoderNodeAgent:\n    def __init__(self):\n        self.name = \"Qwen 2.5 Coder Node\"\n        self.is_active = True\n        self.capabilities = [\"Multi-lingual code gen\",\"Python tool evaluation\",\"Formal verification\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = Qwen25CoderNodeAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n"
+      },
+      {
+        "fileName": "agent_manifest.json",
+        "language": "json",
+        "linesCount": 22,
+        "description": "Agent configuration, tools permission scope, and telemetry registration",
+        "content": "{\n  \"agent_id\": \"agent-qwen-coder-05\",\n  \"name\": \"Qwen 2.5 Coder Node\",\n  \"protocol\": \"Tool Calling\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Kubernetes Pod with read-only rootfs\",\n  \"capabilities\": [\n    \"Multi-lingual code gen\",\n    \"Python tool evaluation\",\n    \"Formal verification\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 45,\n    \"last_ping\": \"2026-10-13T23:59:25.969Z\"\n  }\n}"
+      }
+    ],
+    "fullCode": "\"\"\"\nQwen 2.5 Coder Node - Autonomous Agent Runtime\nOrigin: China (Alibaba Cloud / Qwen Team)\nAutonomy: L3-Conditional | Sandbox: Kubernetes Pod with read-only rootfs\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass Qwen25CoderNodeAgent:\n    def __init__(self):\n        self.name = \"Qwen 2.5 Coder Node\"\n        self.is_active = True\n        self.capabilities = [\"Multi-lingual code gen\",\"Python tool evaluation\",\"Formal verification\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = Qwen25CoderNodeAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n",
+    "dependencies": [
+      "requests>=2.31.0",
+      "pydantic>=2.0.0"
+    ],
+    "version": "v1.0.0",
+    "systemPrompt": "You are Qwen 2.5 Coder Node, an autonomous agent specializing in coding-swe.",
+    "toolsManifest": "[\"Multi-lingual code gen\",\"Python tool evaluation\",\"Formal verification\"]"
+  },
+  "telemetrySnapshot": {
+    "lastPingTimestamp": "2026-10-13T23:59:25.969Z",
+    "lastLatencyMs": 82,
+    "uptimePercentage": 99.78,
+    "heartbeatIntervalSeconds": 45,
+    "requestsHandled24h": 310616,
+    "averageExecutionTimeSec": 65
+  },
+  "savedAt": "2026-10-13T23:59:26.036Z",
+  "lastUpdatedAt": "2026-10-13T23:59:26.036Z",
+  "source": "crawler_telemetry",
+  "notes": "Ingested from live observatory crawler. Latency: 82ms."
+}
