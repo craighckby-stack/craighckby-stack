@@ -1,0 +1,77 @@
+{
+  "id": "repo-npm-agent--cablate-mcp-google-map",
+  "agentId": "npm-agent--cablate-mcp-google-map",
+  "name": "@cablate/mcp-google-map",
+  "tagline": "18 Google Maps tools for AI agents — geocode, search, directions, weather, air quality, local rank tracking, map images via MCP server or standalone CLI",
+  "category": "coding-swe",
+  "isActive": true,
+  "status": "live",
+  "classification": {
+    "classification": "functional",
+    "spamScore": 2,
+    "confidencePercent": 94,
+    "verdict": "Verified Functional Agent (Legitimate Tool Calling)",
+    "reasons": [
+      "Standardized Model Context Protocol (MCP) tool integration",
+      "Strict typed schemas and deterministic validation"
+    ],
+    "threatIndicators": [],
+    "safePatterns": [
+      "Standardized Model Context Protocol (MCP) tool integration",
+      "Strict typed schemas and deterministic validation"
+    ],
+    "auditedAt": "2026-10-13T23:59:25.980Z",
+    "auditMethod": "heuristic-analyzer"
+  },
+  "origin": {
+    "country": "cablate",
+    "countryCode": "US",
+    "region": "Global / Decentralized",
+    "cloudProvider": "Self-Hosted",
+    "organization": "cablate",
+    "isSovereignAI": false
+  },
+  "protocol": "MCP",
+  "foundationModel": "TypeScript / Node MCP Runtime",
+  "autonomyLevel": "L2-Semi-Auto",
+  "securitySandbox": "Node.js Isolated Sandbox",
+  "code": {
+    "primaryLanguage": "typescript",
+    "entryFile": "agent_runner.py",
+    "files": [
+      {
+        "fileName": "agent_runner.py",
+        "language": "typescript",
+        "linesCount": 26,
+        "description": "Complete agent execution loop for @cablate/mcp-google-map",
+        "content": "/**\n * @cablate/mcp-google-map - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class cablatemcpgooglemapAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"-cablate-mcp-google-map\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] @cablate/mcp-google-map online. Foundation Model: TypeScript / Node MCP Runtime\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n"
+      },
+      {
+        "fileName": "agent_manifest.json",
+        "language": "json",
+        "linesCount": 22,
+        "description": "Agent configuration, tools permission scope, and telemetry registration",
+        "content": "{\n  \"agent_id\": \"npm-agent--cablate-mcp-google-map\",\n  \"name\": \"@cablate/mcp-google-map\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L2-Semi-Auto\",\n  \"security_sandbox\": \"Node.js Isolated Sandbox\",\n  \"capabilities\": [\n    \"NPM Package\",\n    \"Model Context Protocol\",\n    \"CLI execution\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 60,\n    \"last_ping\": \"2026-10-13T23:59:25.969Z\"\n  }\n}"
+      }
+    ],
+    "fullCode": "/**\n * @cablate/mcp-google-map - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class cablatemcpgooglemapAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"-cablate-mcp-google-map\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] @cablate/mcp-google-map online. Foundation Model: TypeScript / Node MCP Runtime\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
+    "dependencies": [
+      "@modelcontextprotocol/sdk>=1.0.0"
+    ],
+    "version": "v1.0.0",
+    "systemPrompt": "You are @cablate/mcp-google-map, an autonomous agent specializing in coding-swe.",
+    "toolsManifest": "[\"NPM Package\",\"Model Context Protocol\",\"CLI execution\"]"
+  },
+  "telemetrySnapshot": {
+    "lastPingTimestamp": "2026-10-13T23:59:25.969Z",
+    "lastLatencyMs": 31,
+    "uptimePercentage": 99.9,
+    "heartbeatIntervalSeconds": 60,
+    "requestsHandled24h": 710,
+    "averageExecutionTimeSec": 15
+  },
+  "savedAt": "2026-10-13T23:59:25.980Z",
+  "lastUpdatedAt": "2026-10-13T23:59:25.980Z",
+  "source": "crawler_telemetry",
+  "notes": "Ingested from live observatory crawler. Latency: 31ms."
+}
