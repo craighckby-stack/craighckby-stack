@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-elevenlabs-voice-13",
+  "name": "ElevenLabs Conversational Node",
+  "protocol": "WebSockets",
+  "autonomy_level": "L2-Semi-Auto",
+  "security_sandbox": "Edge CDN audio processing with ephemeral state encryption",
+  "capabilities": [
+    "32-language real-time speech",
+    "Acoustic emotion adaptation",
+    "Custom webhook tool execution"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 10,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
