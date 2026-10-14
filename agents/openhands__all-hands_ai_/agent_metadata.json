@@ -18,7 +18,7 @@
     "safePatterns": [
       "Standardized Model Context Protocol (MCP) tool integration"
     ],
-    "auditedAt": "2026-10-14T00:13:40.889Z",
+    "auditedAt": "2026-10-14T01:39:34.652Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-openhands-02\",\n  \"name\": \"OpenHands (All-Hands AI)\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Docker gVisor Runtime containerization\",\n  \"capabilities\": [\n    \"Bash REPL\",\n    \"Jupyter notebook execution\",\n    \"Web browsing\",\n    \"VSCode workspace mounting\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 60,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-openhands-02\",\n  \"name\": \"OpenHands (All-Hands AI)\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Docker gVisor Runtime containerization\",\n  \"capabilities\": [\n    \"Bash REPL\",\n    \"Jupyter notebook execution\",\n    \"Web browsing\",\n    \"VSCode workspace mounting\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 60,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "/**\n * OpenHands (All-Hands AI) - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class OpenHandsAllHandsAIAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"openhands--all-hands-ai-\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] OpenHands (All-Hands AI) online. Foundation Model: Multi-model (Claude 3.7 Sonnet / Gemini 2.5 Pro)\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
@@ -61,15 +61,15 @@
     "toolsManifest": "[\"Bash REPL\",\"Jupyter notebook execution\",\"Web browsing\",\"VSCode workspace mounting\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 27,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 28,
     "uptimePercentage": 99.85,
     "heartbeatIntervalSeconds": 60,
-    "requestsHandled24h": 92322,
+    "requestsHandled24h": 92363,
     "averageExecutionTimeSec": 180
   },
-  "savedAt": "2026-10-14T00:13:40.889Z",
-  "lastUpdatedAt": "2026-10-14T00:13:40.889Z",
+  "savedAt": "2026-10-14T01:39:34.652Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.652Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 27ms."
+  "notes": "Ingested from live observatory crawler. Latency: 28ms."
 }
