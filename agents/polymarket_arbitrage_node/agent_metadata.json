@@ -18,7 +18,7 @@
     "safePatterns": [
       "Isolated sandbox container runtime boundary"
     ],
-    "auditedAt": "2026-10-14T00:13:41.040Z",
+    "auditedAt": "2026-10-14T01:39:34.783Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-polymarket-whale-17\",\n  \"name\": \"Polymarket Arbitrage Node\",\n  \"protocol\": \"WebSockets\",\n  \"autonomy_level\": \"L5-Full-Autonomy\",\n  \"security_sandbox\": \"Hardware Security Module (HSM) signing key isolation\",\n  \"capabilities\": [\n    \"On-chain EVM smart contract calls\",\n    \"Cross-exchange statistical arbitrage\",\n    \"High-frequency order management\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 2,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-polymarket-whale-17\",\n  \"name\": \"Polymarket Arbitrage Node\",\n  \"protocol\": \"WebSockets\",\n  \"autonomy_level\": \"L5-Full-Autonomy\",\n  \"security_sandbox\": \"Hardware Security Module (HSM) signing key isolation\",\n  \"capabilities\": [\n    \"On-chain EVM smart contract calls\",\n    \"Cross-exchange statistical arbitrage\",\n    \"High-frequency order management\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 2,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "\"\"\"\nPolymarket Arbitrage Node - Autonomous Agent Runtime\nOrigin: Singapore (Decentralized DeFi Syndicate)\nAutonomy: L5-Full-Autonomy | Sandbox: Hardware Security Module (HSM) signing key isolation\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass PolymarketArbitrageNodeAgent:\n    def __init__(self):\n        self.name = \"Polymarket Arbitrage Node\"\n        self.is_active = True\n        self.capabilities = [\"On-chain EVM smart contract calls\",\"Cross-exchange statistical arbitrage\",\"High-frequency order management\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = PolymarketArbitrageNodeAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n",
@@ -62,15 +62,15 @@
     "toolsManifest": "[\"On-chain EVM smart contract calls\",\"Cross-exchange statistical arbitrage\",\"High-frequency order management\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 12,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 16,
     "uptimePercentage": 99.95,
     "heartbeatIntervalSeconds": 2,
-    "requestsHandled24h": 1840063,
+    "requestsHandled24h": 1840077,
     "averageExecutionTimeSec": 0.8
   },
-  "savedAt": "2026-10-14T00:13:41.040Z",
-  "lastUpdatedAt": "2026-10-14T00:13:41.040Z",
+  "savedAt": "2026-10-14T01:39:34.783Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.783Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 12ms."
+  "notes": "Ingested from live observatory crawler. Latency: 16ms."
 }
