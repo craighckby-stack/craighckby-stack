@@ -1,0 +1,73 @@
+{
+  "id": "repo-openhands-swe-08",
+  "agentId": "agent-openhands-08",
+  "name": "OpenHands (OpenDevin) Autonomous Agent",
+  "tagline": "Open-source autonomous AI software engineer running test-driven bug fixes in Docker workspaces.",
+  "category": "coding-swe",
+  "isActive": true,
+  "status": "live",
+  "classification": {
+    "classification": "functional",
+    "spamScore": 3,
+    "confidencePercent": 99,
+    "verdict": "Verified Functional Open-Source SWE Agent",
+    "reasons": [
+      "Transparent open-source architecture with Docker runtime sandboxing",
+      "Stateful event-stream controller with tool validation",
+      "Community verified under MIT open-source license"
+    ],
+    "threatIndicators": [],
+    "safePatterns": [
+      "Containerized workspace isolation",
+      "Standardized tool definitions (bash, file editor, browsing)",
+      "Zero covert scraping or unauthenticated payload dispatch"
+    ],
+    "auditedAt": "2026-10-13T08:12:00Z",
+    "auditMethod": "verified-author"
+  },
+  "origin": {
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "cloudProvider": "Azure",
+    "organization": "All-Hands-AI / OpenHands Community",
+    "isSovereignAI": false
+  },
+  "protocol": "A2A",
+  "foundationModel": "OpenAI GPT-4o / Claude 3.5 Sonnet",
+  "autonomyLevel": "L4-High-Autonomy",
+  "securitySandbox": "Docker Container Runtime with Sandboxed MicroVM",
+  "code": {
+    "primaryLanguage": "python",
+    "entryFile": "agent_controller.py",
+    "version": "v0.14.0",
+    "dependencies": [
+      "openhands-ai>=0.14.0",
+      "docker>=7.1.0",
+      "litellm>=1.40.0"
+    ],
+    "systemPrompt": "You are OpenHands, an open-source software engineer. Solve github issues autonomously by reproducing tests, modifying files, and validating test runs.",
+    "files": [
+      {
+        "fileName": "agent_controller.py",
+        "language": "python",
+        "linesCount": 62,
+        "description": "Autonomous event-stream agent loop driving bash and file editing actions.",
+        "content": "from typing import Dict, Any, List\nimport asyncio\n\nclass OpenHandsAgentController:\n    def __init__(self, workspace_path: str):\n        self.workspace_path = workspace_path\n        self.state = \"INIT\"\n        self.is_active = True\n\n    async def step(self, instruction: str) -> Dict[str, Any]:\n        print(f\"[OPENHANDS-ACTIVE] Processing developer instruction: {instruction}\")\n        # Execute in sandbox, capture stdout, update git status\n        return {\"status\": \"SUCCESS\", \"step\": 1, \"action\": \"run_test_suite\"}\n\n    async def close(self):\n        self.is_active = False\n        print(\"[OPENHANDS] Workspace unmounted cleanly.\")\n"
+      }
+    ],
+    "fullCode": "\"\"\"\nOpenHands Autonomous Software Engineer - Full Python Controller\nClassification: FUNCTIONAL | Status: ACTIVE (Live Agent)\n\"\"\"\nclass OpenHandsRuntime:\n    def __init__(self):\n        self.active = True\n        self.classification = \"functional\"\n\n    def run_build(self):\n        print(\"[OPENHANDS] Running verified compilation in sandbox...\")\n"
+  },
+  "telemetrySnapshot": {
+    "lastPingTimestamp": "2026-10-13T08:33:00Z",
+    "lastLatencyMs": 44,
+    "uptimePercentage": 99.88,
+    "heartbeatIntervalSeconds": 30,
+    "requestsHandled24h": 16200,
+    "averageExecutionTimeSec": 135
+  },
+  "savedAt": "2026-10-13T07:20:00Z",
+  "lastUpdatedAt": "2026-10-13T08:33:00Z",
+  "source": "crawler_telemetry",
+  "notes": "Leading open source autonomous coding agent with community security reviews."
+}
