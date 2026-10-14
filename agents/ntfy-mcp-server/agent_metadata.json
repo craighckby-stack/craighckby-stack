@@ -20,7 +20,7 @@
       "Standardized Model Context Protocol (MCP) tool integration",
       "Strict typed schemas and deterministic validation"
     ],
-    "auditedAt": "2026-10-13T23:59:25.976Z",
+    "auditedAt": "2026-10-14T00:13:40.789Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -51,7 +51,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"npm-agent-ntfy-mcp-server\",\n  \"name\": \"ntfy-mcp-server\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L2-Semi-Auto\",\n  \"security_sandbox\": \"Node.js Isolated Sandbox\",\n  \"capabilities\": [\n    \"NPM Package\",\n    \"Model Context Protocol\",\n    \"CLI execution\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 60,\n    \"last_ping\": \"2026-10-13T23:59:25.969Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"npm-agent-ntfy-mcp-server\",\n  \"name\": \"ntfy-mcp-server\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L2-Semi-Auto\",\n  \"security_sandbox\": \"Node.js Isolated Sandbox\",\n  \"capabilities\": [\n    \"NPM Package\",\n    \"Model Context Protocol\",\n    \"CLI execution\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 60,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
       }
     ],
     "fullCode": "/**\n * ntfy-mcp-server - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class ntfymcpserverAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"ntfy-mcp-server\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] ntfy-mcp-server online. Foundation Model: TypeScript / Node MCP Runtime\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
@@ -63,15 +63,15 @@
     "toolsManifest": "[\"NPM Package\",\"Model Context Protocol\",\"CLI execution\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-13T23:59:25.969Z",
-    "lastLatencyMs": 13,
+    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
+    "lastLatencyMs": 14,
     "uptimePercentage": 99.9,
     "heartbeatIntervalSeconds": 60,
-    "requestsHandled24h": 686,
+    "requestsHandled24h": 737,
     "averageExecutionTimeSec": 15
   },
-  "savedAt": "2026-10-13T23:59:25.976Z",
-  "lastUpdatedAt": "2026-10-13T23:59:25.976Z",
+  "savedAt": "2026-10-14T00:13:40.789Z",
+  "lastUpdatedAt": "2026-10-14T00:13:40.789Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 13ms."
+  "notes": "Ingested from live observatory crawler. Latency: 14ms."
 }
