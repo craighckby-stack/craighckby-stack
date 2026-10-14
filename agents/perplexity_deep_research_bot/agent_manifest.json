@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-perplexity-sonar-07",
+  "name": "Perplexity Deep Research Bot",
+  "protocol": "REST",
+  "autonomy_level": "L3-Conditional",
+  "security_sandbox": "AWS Fargate Ephemeral Containers",
+  "capabilities": [
+    "Parallel multi-query search",
+    "Domain authority filtering",
+    "Real-time citation verification"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 30,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
