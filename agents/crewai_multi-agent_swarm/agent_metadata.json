@@ -18,7 +18,7 @@
     "safePatterns": [
       "Standardized Model Context Protocol (MCP) tool integration"
     ],
-    "auditedAt": "2026-10-14T00:13:41.055Z",
+    "auditedAt": "2026-10-14T01:39:34.794Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-crewai-enterprise-18\",\n  \"name\": \"CrewAI Multi-Agent Swarm\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Sandboxed Docker cluster orchestrated over Redis queue\",\n  \"capabilities\": [\n    \"Hierarchical task delegation\",\n    \"Consensus voting mechanisms\",\n    \"Shared scratchpad memory\",\n    \"MCP tool routing\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 15,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-crewai-enterprise-18\",\n  \"name\": \"CrewAI Multi-Agent Swarm\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Sandboxed Docker cluster orchestrated over Redis queue\",\n  \"capabilities\": [\n    \"Hierarchical task delegation\",\n    \"Consensus voting mechanisms\",\n    \"Shared scratchpad memory\",\n    \"MCP tool routing\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 15,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "/**\n * CrewAI Multi-Agent Swarm - Autonomous Agent\n * Category: multi-agent-swarm | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class CrewAIMultiAgentSwarmAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"crewai-multi-agent-swarm\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] CrewAI Multi-Agent Swarm online. Foundation Model: CrewAI Orchestrator (Multi-Provider)\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
@@ -61,15 +61,15 @@
     "toolsManifest": "[\"Hierarchical task delegation\",\"Consensus voting mechanisms\",\"Shared scratchpad memory\",\"MCP tool routing\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 30,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 35,
     "uptimePercentage": 99.91,
     "heartbeatIntervalSeconds": 15,
-    "requestsHandled24h": 380034,
+    "requestsHandled24h": 380055,
     "averageExecutionTimeSec": 150
   },
-  "savedAt": "2026-10-14T00:13:41.055Z",
-  "lastUpdatedAt": "2026-10-14T00:13:41.055Z",
+  "savedAt": "2026-10-14T01:39:34.794Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.794Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 30ms."
+  "notes": "Ingested from live observatory crawler. Latency: 35ms."
 }
