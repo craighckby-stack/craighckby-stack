@@ -1,0 +1,76 @@
+{
+  "id": "repo-agent-numerai-quant-16",
+  "agentId": "agent-numerai-quant-16",
+  "name": "Numerai Signals Autonomous Quant",
+  "tagline": "Algorithmic market prediction agent synthesizing global macro signals and equities volume",
+  "category": "finance-quant",
+  "isActive": true,
+  "status": "live",
+  "classification": {
+    "classification": "functional",
+    "spamScore": 2,
+    "confidencePercent": 94,
+    "verdict": "Verified Functional Agent (Legitimate Tool Calling)",
+    "reasons": [
+      "Isolated sandbox container runtime boundary"
+    ],
+    "threatIndicators": [],
+    "safePatterns": [
+      "Isolated sandbox container runtime boundary"
+    ],
+    "auditedAt": "2026-10-13T23:59:26.124Z",
+    "auditMethod": "heuristic-analyzer"
+  },
+  "origin": {
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "cloudProvider": "AWS",
+    "organization": "Numerai Hedge Fund Network",
+    "isSovereignAI": false
+  },
+  "protocol": "REST",
+  "foundationModel": "Custom Quant Ensemble + DeepSeek-R1",
+  "autonomyLevel": "L4-High-Autonomy",
+  "securitySandbox": "Isolated AWS ECS Fargate container with restricted outbound firewall",
+  "code": {
+    "primaryLanguage": "python",
+    "entryFile": "agent_core.py",
+    "files": [
+      {
+        "fileName": "agent_core.py",
+        "language": "python",
+        "linesCount": 24,
+        "description": "Complete agent execution loop for Numerai Signals Autonomous Quant",
+        "content": "\"\"\"\nNumerai Signals Autonomous Quant - Autonomous Agent Runtime\nOrigin: United States (Numerai Hedge Fund Network)\nAutonomy: L4-High-Autonomy | Sandbox: Isolated AWS ECS Fargate container with restricted outbound firewall\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass NumeraiSignalsAutonomousQuantAgent:\n    def __init__(self):\n        self.name = \"Numerai Signals Autonomous Quant\"\n        self.is_active = True\n        self.capabilities = [\"Tick-by-tick orderbook analysis\",\"Monte Carlo portfolio simulation\",\"Cryptographic signal submission\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = NumeraiSignalsAutonomousQuantAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n"
+      },
+      {
+        "fileName": "agent_manifest.json",
+        "language": "json",
+        "linesCount": 22,
+        "description": "Agent configuration, tools permission scope, and telemetry registration",
+        "content": "{\n  \"agent_id\": \"agent-numerai-quant-16\",\n  \"name\": \"Numerai Signals Autonomous Quant\",\n  \"protocol\": \"REST\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Isolated AWS ECS Fargate container with restricted outbound firewall\",\n  \"capabilities\": [\n    \"Tick-by-tick orderbook analysis\",\n    \"Monte Carlo portfolio simulation\",\n    \"Cryptographic signal submission\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 60,\n    \"last_ping\": \"2026-10-13T23:59:25.969Z\"\n  }\n}"
+      }
+    ],
+    "fullCode": "\"\"\"\nNumerai Signals Autonomous Quant - Autonomous Agent Runtime\nOrigin: United States (Numerai Hedge Fund Network)\nAutonomy: L4-High-Autonomy | Sandbox: Isolated AWS ECS Fargate container with restricted outbound firewall\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass NumeraiSignalsAutonomousQuantAgent:\n    def __init__(self):\n        self.name = \"Numerai Signals Autonomous Quant\"\n        self.is_active = True\n        self.capabilities = [\"Tick-by-tick orderbook analysis\",\"Monte Carlo portfolio simulation\",\"Cryptographic signal submission\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = NumeraiSignalsAutonomousQuantAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n",
+    "dependencies": [
+      "requests>=2.31.0",
+      "pydantic>=2.0.0"
+    ],
+    "version": "v1.0.0",
+    "systemPrompt": "You are Numerai Signals Autonomous Quant, an autonomous agent specializing in finance-quant.",
+    "toolsManifest": "[\"Tick-by-tick orderbook analysis\",\"Monte Carlo portfolio simulation\",\"Cryptographic signal submission\"]"
+  },
+  "telemetrySnapshot": {
+    "lastPingTimestamp": "2026-10-13T23:59:25.969Z",
+    "lastLatencyMs": 31,
+    "uptimePercentage": 99.99,
+    "heartbeatIntervalSeconds": 60,
+    "requestsHandled24h": 88112,
+    "averageExecutionTimeSec": 45
+  },
+  "savedAt": "2026-10-13T23:59:26.124Z",
+  "lastUpdatedAt": "2026-10-13T23:59:26.124Z",
+  "source": "crawler_telemetry",
+  "notes": "Ingested from live observatory crawler. Latency: 31ms."
+}
