@@ -1,0 +1,16 @@
+{
+  "agent_id": "agent-qwen-coder-05",
+  "name": "Qwen 2.5 Coder Node",
+  "protocol": "Tool Calling",
+  "autonomy_level": "L3-Conditional",
+  "security_sandbox": "Kubernetes Pod with read-only rootfs",
+  "capabilities": [
+    "Multi-lingual code gen",
+    "Python tool evaluation",
+    "Formal verification"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 45,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
