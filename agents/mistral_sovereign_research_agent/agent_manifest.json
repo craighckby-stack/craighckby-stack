@@ -1,0 +1,17 @@
+{
+  "agent_id": "agent-mistral-lechat-08",
+  "name": "Mistral Sovereign Research Agent",
+  "protocol": "Tool Calling",
+  "autonomy_level": "L3-Conditional",
+  "security_sandbox": "Scaleway / Hetzner Sovereign Bare-Metal ISO 27001",
+  "capabilities": [
+    "EU legal text analysis",
+    "Multilingual synthesis",
+    "Local web crawling",
+    "Data residency guarantee"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 30,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
