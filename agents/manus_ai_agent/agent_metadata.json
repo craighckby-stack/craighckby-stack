@@ -18,7 +18,7 @@
     "safePatterns": [
       "Standardized Model Context Protocol (MCP) tool integration"
     ],
-    "auditedAt": "2026-10-14T00:13:40.959Z",
+    "auditedAt": "2026-10-14T01:39:34.711Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-manus-09\",\n  \"name\": \"Manus AI Agent\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Isolated Chromium headless container with egress firewall\",\n  \"capabilities\": [\n    \"DOM tree interaction\",\n    \"Visual coordinate clicking\",\n    \"Captcha bypassing\",\n    \"Form autofill\",\n    \"File export\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 20,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-manus-09\",\n  \"name\": \"Manus AI Agent\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L4-High-Autonomy\",\n  \"security_sandbox\": \"Isolated Chromium headless container with egress firewall\",\n  \"capabilities\": [\n    \"DOM tree interaction\",\n    \"Visual coordinate clicking\",\n    \"Captcha bypassing\",\n    \"Form autofill\",\n    \"File export\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 20,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "/**\n * Manus AI Agent - Autonomous Agent\n * Category: browser-rpa | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class ManusAIAgentAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"manus-ai-agent\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] Manus AI Agent online. Foundation Model: Multi-Agent Vision-Language Architecture\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
@@ -61,15 +61,15 @@
     "toolsManifest": "[\"DOM tree interaction\",\"Visual coordinate clicking\",\"Captcha bypassing\",\"Form autofill\",\"File export\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 50,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 51,
     "uptimePercentage": 99.82,
     "heartbeatIntervalSeconds": 20,
-    "requestsHandled24h": 175092,
+    "requestsHandled24h": 175023,
     "averageExecutionTimeSec": 210
   },
-  "savedAt": "2026-10-14T00:13:40.959Z",
-  "lastUpdatedAt": "2026-10-14T00:13:40.959Z",
+  "savedAt": "2026-10-14T01:39:34.711Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.711Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 50ms."
+  "notes": "Ingested from live observatory crawler. Latency: 51ms."
 }
