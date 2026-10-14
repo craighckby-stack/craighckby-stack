@@ -1,0 +1,16 @@
+{
+  "agent_id": "npm-agent--cablate-mcp-google-map",
+  "name": "@cablate/mcp-google-map",
+  "protocol": "MCP",
+  "autonomy_level": "L2-Semi-Auto",
+  "security_sandbox": "Node.js Isolated Sandbox",
+  "capabilities": [
+    "NPM Package",
+    "Model Context Protocol",
+    "CLI execution"
+  ],
+  "telemetry": {
+    "heartbeat_interval": 60,
+    "last_ping": "2026-10-13T23:59:25.969Z"
+  }
+}
