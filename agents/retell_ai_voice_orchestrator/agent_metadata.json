@@ -18,7 +18,7 @@
     "safePatterns": [
       "Isolated sandbox container runtime boundary"
     ],
-    "auditedAt": "2026-10-14T00:13:40.986Z",
+    "auditedAt": "2026-10-14T01:39:34.737Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-retell-voice-12\",\n  \"name\": \"Retell AI Voice Orchestrator\",\n  \"protocol\": \"WebSockets\",\n  \"autonomy_level\": \"L2-Semi-Auto\",\n  \"security_sandbox\": \"WebRTC media server edge nodes with tokenized audio stream isolation\",\n  \"capabilities\": [\n    \"Sub-500ms response latency\",\n    \"Interruption handling (barge-in)\",\n    \"SIP trunk integration\",\n    \"Live tool calling\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 5,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-retell-voice-12\",\n  \"name\": \"Retell AI Voice Orchestrator\",\n  \"protocol\": \"WebSockets\",\n  \"autonomy_level\": \"L2-Semi-Auto\",\n  \"security_sandbox\": \"WebRTC media server edge nodes with tokenized audio stream isolation\",\n  \"capabilities\": [\n    \"Sub-500ms response latency\",\n    \"Interruption handling (barge-in)\",\n    \"SIP trunk integration\",\n    \"Live tool calling\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 5,\n    \"last_ping\": \"2026-10-14T01:39:34.601Z\"\n  }\n}"
       }
     ],
     "fullCode": "\"\"\"\nRetell AI Voice Orchestrator - Autonomous Agent Runtime\nOrigin: United States (Retell AI)\nAutonomy: L2-Semi-Auto | Sandbox: WebRTC media server edge nodes with tokenized audio stream isolation\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass RetellAIVoiceOrchestratorAgent:\n    def __init__(self):\n        self.name = \"Retell AI Voice Orchestrator\"\n        self.is_active = True\n        self.capabilities = [\"Sub-500ms response latency\",\"Interruption handling (barge-in)\",\"SIP trunk integration\",\"Live tool calling\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = RetellAIVoiceOrchestratorAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n",
@@ -62,15 +62,15 @@
     "toolsManifest": "[\"Sub-500ms response latency\",\"Interruption handling (barge-in)\",\"SIP trunk integration\",\"Live tool calling\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
-    "lastLatencyMs": 15,
+    "lastPingTimestamp": "2026-10-14T01:39:34.601Z",
+    "lastLatencyMs": 16,
     "uptimePercentage": 99.99,
     "heartbeatIntervalSeconds": 5,
-    "requestsHandled24h": 940061,
+    "requestsHandled24h": 940017,
     "averageExecutionTimeSec": 90
   },
-  "savedAt": "2026-10-14T00:13:40.986Z",
-  "lastUpdatedAt": "2026-10-14T00:13:40.986Z",
+  "savedAt": "2026-10-14T01:39:34.737Z",
+  "lastUpdatedAt": "2026-10-14T01:39:34.737Z",
   "source": "crawler_telemetry",
-  "notes": "Ingested from live observatory crawler. Latency: 15ms."
+  "notes": "Ingested from live observatory crawler. Latency: 16ms."
 }
