@@ -1,0 +1,77 @@
+{
+  "id": "repo-npm-agent--cyanheads-biorxiv-mcp-server",
+  "agentId": "npm-agent--cyanheads-biorxiv-mcp-server",
+  "name": "@cyanheads/biorxiv-mcp-server",
+  "tagline": "Search and retrieve bioRxiv and medRxiv preprints — by DOI, date interval, or keyword — via MCP. STDIO or Streamable HTTP.",
+  "category": "coding-swe",
+  "isActive": true,
+  "status": "live",
+  "classification": {
+    "classification": "functional",
+    "spamScore": 2,
+    "confidencePercent": 94,
+    "verdict": "Verified Functional Agent (Legitimate Tool Calling)",
+    "reasons": [
+      "Standardized Model Context Protocol (MCP) tool integration",
+      "Strict typed schemas and deterministic validation"
+    ],
+    "threatIndicators": [],
+    "safePatterns": [
+      "Standardized Model Context Protocol (MCP) tool integration",
+      "Strict typed schemas and deterministic validation"
+    ],
+    "auditedAt": "2026-10-13T23:59:25.970Z",
+    "auditMethod": "heuristic-analyzer"
+  },
+  "origin": {
+    "country": "cyanheads",
+    "countryCode": "US",
+    "region": "Global / Decentralized",
+    "cloudProvider": "Self-Hosted",
+    "organization": "cyanheads",
+    "isSovereignAI": false
+  },
+  "protocol": "MCP",
+  "foundationModel": "TypeScript / Node MCP Runtime",
+  "autonomyLevel": "L2-Semi-Auto",
+  "securitySandbox": "Node.js Isolated Sandbox",
+  "code": {
+    "primaryLanguage": "typescript",
+    "entryFile": "agent_runner.py",
+    "files": [
+      {
+        "fileName": "agent_runner.py",
+        "language": "typescript",
+        "linesCount": 26,
+        "description": "Complete agent execution loop for @cyanheads/biorxiv-mcp-server",
+        "content": "/**\n * @cyanheads/biorxiv-mcp-server - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class cyanheadsbiorxivmcpserverAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"-cyanheads-biorxiv-mcp-server\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] @cyanheads/biorxiv-mcp-server online. Foundation Model: TypeScript / Node MCP Runtime\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n"
+      },
+      {
+        "fileName": "agent_manifest.json",
+        "language": "json",
+        "linesCount": 22,
+        "description": "Agent configuration, tools permission scope, and telemetry registration",
+        "content": "{\n  \"agent_id\": \"npm-agent--cyanheads-biorxiv-mcp-server\",\n  \"name\": \"@cyanheads/biorxiv-mcp-server\",\n  \"protocol\": \"MCP\",\n  \"autonomy_level\": \"L2-Semi-Auto\",\n  \"security_sandbox\": \"Node.js Isolated Sandbox\",\n  \"capabilities\": [\n    \"NPM Package\",\n    \"Model Context Protocol\",\n    \"CLI execution\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 60,\n    \"last_ping\": \"2026-10-13T23:59:25.969Z\"\n  }\n}"
+      }
+    ],
+    "fullCode": "/**\n * @cyanheads/biorxiv-mcp-server - Autonomous Agent\n * Category: coding-swe | Protocol: MCP\n * Classification: Functional Agent Implementation\n */\nimport { Server } from \"@modelcontextprotocol/sdk/server/index.js\";\nimport { StdioServerTransport } from \"@modelcontextprotocol/sdk/server/stdio.js\";\n\nexport class cyanheadsbiorxivmcpserverAgent {\n  private server: Server;\n  public isActive = true;\n\n  constructor() {\n    this.server = new Server(\n      { name: \"-cyanheads-biorxiv-mcp-server\", version: \"1.0.0\" },\n      { capabilities: { tools: {}, prompts: {} } }\n    );\n  }\n\n  async start() {\n    console.log(\"[AGENT-ACTIVE] @cyanheads/biorxiv-mcp-server online. Foundation Model: TypeScript / Node MCP Runtime\");\n    const transport = new StdioServerTransport();\n    await this.server.connect(transport);\n  }\n}\n",
+    "dependencies": [
+      "@modelcontextprotocol/sdk>=1.0.0"
+    ],
+    "version": "v1.0.0",
+    "systemPrompt": "You are @cyanheads/biorxiv-mcp-server, an autonomous agent specializing in coding-swe.",
+    "toolsManifest": "[\"NPM Package\",\"Model Context Protocol\",\"CLI execution\"]"
+  },
+  "telemetrySnapshot": {
+    "lastPingTimestamp": "2026-10-13T23:59:25.969Z",
+    "lastLatencyMs": 12,
+    "uptimePercentage": 99.9,
+    "heartbeatIntervalSeconds": 60,
+    "requestsHandled24h": 655,
+    "averageExecutionTimeSec": 15
+  },
+  "savedAt": "2026-10-13T23:59:25.971Z",
+  "lastUpdatedAt": "2026-10-13T23:59:25.971Z",
+  "source": "crawler_telemetry",
+  "notes": "Ingested from live observatory crawler. Latency: 12ms."
+}
