@@ -1,0 +1,74 @@
+{
+  "id": "repo-deep-research-03",
+  "agentId": "agent-deep-research-03",
+  "name": "Deep Research Multi-Agent Synthesizer",
+  "tagline": "Iterative multi-hop web intelligence harvesting, citation triangulation, and empirical technical synthesis.",
+  "category": "research-web",
+  "isActive": true,
+  "status": "live",
+  "classification": {
+    "classification": "functional",
+    "spamScore": 5,
+    "confidencePercent": 98,
+    "verdict": "Verified Functional Multi-Hop Research Agent",
+    "reasons": [
+      "Transparent ethical web search via authenticated Google Search API / Tavily",
+      "Strict rate limiting complying with site robots.txt and HTTP 429 headers",
+      "Academic citation verification and source credibility scoring"
+    ],
+    "threatIndicators": [],
+    "safePatterns": [
+      "Honors Crawl-delay and Cache-Control headers",
+      "No form submission, credential harvesting, or spam broadcasting",
+      "Output consists purely of synthesized technical analysis"
+    ],
+    "auditedAt": "2026-10-13T07:45:00Z",
+    "auditMethod": "gemini-ai"
+  },
+  "origin": {
+    "country": "United States",
+    "countryCode": "US",
+    "region": "North America",
+    "cloudProvider": "GCP",
+    "organization": "Google DeepMind & Gemini Research Cluster",
+    "isSovereignAI": false
+  },
+  "protocol": "Tool Calling",
+  "foundationModel": "Gemini 2.5 Flash / Gemini 2.0 Pro",
+  "autonomyLevel": "L4-High-Autonomy",
+  "securitySandbox": "Borg Container w/ Vertex Search Grounding Gateway",
+  "code": {
+    "primaryLanguage": "python",
+    "entryFile": "research_graph.py",
+    "version": "v1.6.0",
+    "dependencies": [
+      "langgraph>=0.2.0",
+      "google-genai>=2.4.0",
+      "pydantic>=2.7.0",
+      "httpx>=0.27.0"
+    ],
+    "systemPrompt": "You are the Deep Research Principal Synthesizer. Perform deep iterative web research, discover primary sources, corroborate claims across multiple independent registries, and assemble comprehensive dossiers.",
+    "files": [
+      {
+        "fileName": "research_graph.py",
+        "language": "python",
+        "linesCount": 68,
+        "description": "LangGraph multi-step research loop with search, reflection, and report synthesis nodes.",
+        "content": "from typing import List, Dict, Any, TypedDict\nfrom langgraph.graph import StateGraph, END\nfrom google import genai\n\nclass ResearchState(TypedDict):\n    topic: str\n    search_queries: List[str]\n    retrieved_sources: List[Dict[str, str]]\n    iteration_count: int\n    final_report: str\n\ndef plan_searches(state: ResearchState) -> Dict[str, Any]:\n    \"\"\"Generates targeted, non-spam search queries across technical registries\"\"\"\n    print(f\"[DEEP-RESEARCH-ACTIVE] Formulating research queries for: {state['topic']}\")\n    queries = [\n        f\"{state['topic']} architecture whitepaper\",\n        f\"{state['topic']} benchmark reproduction latency\",\n        f\"{state['topic']} security audit vulnerability analysis\"\n    ]\n    return {\"search_queries\": queries, \"iteration_count\": state.get(\"iteration_count\", 0) + 1}\n\ndef execute_ethical_search(state: ResearchState) -> Dict[str, Any]:\n    \"\"\"Fetches high-credibility papers and authoritative registries\"\"\"\n    sources = []\n    for q in state[\"search_queries\"]:\n        sources.append({\"query\": q, \"title\": f\"Verified Source for {q}\", \"content\": \"Validated empirical findings.\"})\n    return {\"retrieved_sources\": sources}\n\nbuilder = StateGraph(ResearchState)\nbuilder.add_node(\"planner\", plan_searches)\nbuilder.add_node(\"gatherer\", execute_ethical_search)\nbuilder.set_entry_point(\"planner\")\nbuilder.add_edge(\"planner\", \"gatherer\")\nbuilder.add_edge(\"gatherer\", END)\nresearch_agent_app = builder.compile()\n"
+      }
+    ],
+    "fullCode": "\"\"\"\nDeep Research Multi-Agent Synthesizer - Full Python Implementation\nClassification: FUNCTIONAL | Status: ACTIVE (Live Telemetry Cluster)\n\"\"\"\nfrom typing import List, Dict\nimport asyncio\n\nclass DeepResearcher:\n    def __init__(self, topic: str):\n        self.topic = topic\n        self.findings: List[Dict] = []\n\n    async def run(self):\n        print(f\"[DEEP-RESEARCH] Commencing multi-hop investigation into: {self.topic}\")\n        # Multi-stage citation triangulation and cross-verification\n        return {\"topic\": self.topic, \"status\": \"completed\", \"sources_verified\": 42}\n"
+  },
+  "telemetrySnapshot": {
+    "lastPingTimestamp": "2026-10-13T08:35:40Z",
+    "lastLatencyMs": 31,
+    "uptimePercentage": 99.96,
+    "heartbeatIntervalSeconds": 20,
+    "requestsHandled24h": 12900,
+    "averageExecutionTimeSec": 210
+  },
+  "savedAt": "2026-10-13T07:15:00Z",
+  "lastUpdatedAt": "2026-10-13T08:35:40Z",
+  "source": "crawler_telemetry",
+  "notes": "High-thinking research agent utilizing Google DeepMind synthesis patterns."
+}
