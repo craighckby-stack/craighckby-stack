@@ -18,7 +18,7 @@
     "safePatterns": [
       "Isolated sandbox container runtime boundary"
     ],
-    "auditedAt": "2026-10-13T23:59:26.055Z",
+    "auditedAt": "2026-10-14T00:13:40.949Z",
     "auditMethod": "heuristic-analyzer"
   },
   "origin": {
@@ -49,7 +49,7 @@
         "language": "json",
         "linesCount": 22,
         "description": "Agent configuration, tools permission scope, and telemetry registration",
-        "content": "{\n  \"agent_id\": \"agent-mistral-lechat-08\",\n  \"name\": \"Mistral Sovereign Research Agent\",\n  \"protocol\": \"Tool Calling\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Scaleway / Hetzner Sovereign Bare-Metal ISO 27001\",\n  \"capabilities\": [\n    \"EU legal text analysis\",\n    \"Multilingual synthesis\",\n    \"Local web crawling\",\n    \"Data residency guarantee\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 30,\n    \"last_ping\": \"2026-10-13T23:59:25.969Z\"\n  }\n}"
+        "content": "{\n  \"agent_id\": \"agent-mistral-lechat-08\",\n  \"name\": \"Mistral Sovereign Research Agent\",\n  \"protocol\": \"Tool Calling\",\n  \"autonomy_level\": \"L3-Conditional\",\n  \"security_sandbox\": \"Scaleway / Hetzner Sovereign Bare-Metal ISO 27001\",\n  \"capabilities\": [\n    \"EU legal text analysis\",\n    \"Multilingual synthesis\",\n    \"Local web crawling\",\n    \"Data residency guarantee\"\n  ],\n  \"telemetry\": {\n    \"heartbeat_interval\": 30,\n    \"last_ping\": \"2026-10-14T00:13:40.759Z\"\n  }\n}"
       }
     ],
     "fullCode": "\"\"\"\nMistral Sovereign Research Agent - Autonomous Agent Runtime\nOrigin: France (Mistral AI)\nAutonomy: L3-Conditional | Sandbox: Scaleway / Hetzner Sovereign Bare-Metal ISO 27001\n\"\"\"\nimport sys\nimport json\nimport asyncio\n\nclass MistralSovereignResearchAgentAgent:\n    def __init__(self):\n        self.name = \"Mistral Sovereign Research Agent\"\n        self.is_active = True\n        self.capabilities = [\"EU legal text analysis\",\"Multilingual synthesis\",\"Local web crawling\",\"Data residency guarantee\"]\n\n    async def execute_task(self, objective: str):\n        print(f\"[{agent.name.upper()}] Executing objective: {objective}\")\n        # Standard tool calling and observation cycle\n        return {\"status\": \"SUCCESS\", \"result\": \"Objective resolved cleanly in sandbox.\"}\n\nif __name__ == \"__main__\":\n    agent = MistralSovereignResearchAgentAgent()\n    asyncio.run(agent.execute_task(\"Self-diagnostic health probe\"))\n",
@@ -62,15 +62,15 @@
     "toolsManifest": "[\"EU legal text analysis\",\"Multilingual synthesis\",\"Local web crawling\",\"Data residency guarantee\"]"
   },
   "telemetrySnapshot": {
-    "lastPingTimestamp": "2026-10-13T23:59:25.969Z",
+    "lastPingTimestamp": "2026-10-14T00:13:40.759Z",
     "lastLatencyMs": 62,
     "uptimePercentage": 99.89,
     "heartbeatIntervalSeconds": 30,
-    "requestsHandled24h": 210077,
+    "requestsHandled24h": 210085,
     "averageExecutionTimeSec": 85
   },
-  "savedAt": "2026-10-13T23:59:26.055Z",
-  "lastUpdatedAt": "2026-10-13T23:59:26.055Z",
+  "savedAt": "2026-10-14T00:13:40.949Z",
+  "lastUpdatedAt": "2026-10-14T00:13:40.949Z",
   "source": "crawler_telemetry",
   "notes": "Ingested from live observatory crawler. Latency: 62ms."
 }
